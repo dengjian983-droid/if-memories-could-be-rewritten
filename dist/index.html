@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="If Memories Could Be Rewritten, an interactive digital story." />
+    <title>If Memories Could Be Rewritten</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main id="story-app" class="story-app" aria-live="polite">
+      <section id="opening-screen" class="screen opening-screen">
+        <div id="memory-light" class="memory-light" aria-hidden="true"></div>
+        <div class="opening-content">
+          <p class="eyebrow">A first-person interactive memory</p>
+          <h1>If Memories Could Be Rewritten</h1>
+          <p class="opening-instruction">Move your mouse or tap the screen through the darkness to find a memory.</p>
+          <button id="start-button" class="story-button" type="button" disabled>
+            Enter the memory
+          </button>
+          <p id="opening-status" class="interaction-hint" role="status">
+            Move the cursor or tap to begin.
+          </p>
+        </div>
+      </section>
+
+      <section id="memory-interface" class="screen memory-interface is-hidden">
+        <div class="interface-image" role="img" aria-label="Four objects waiting in the dark"></div>
+        <div class="interface-shade" aria-hidden="true"></div>
+        <div class="interface-content">
+          <h2>Find what remains</h2>
+          <p id="interface-status" class="interface-status" role="status">
+            Move across the objects and choose the memory that is waiting.
+          </p>
+        </div>
+        <div class="object-hotspots" aria-label="Memory objects">
+          <button class="object-hotspot object-noodles is-locked" type="button" data-object="0" aria-label="Unlock the noodle bowl memory" disabled>
+            <span class="object-label">Noodles</span>
+          </button>
+          <button class="object-hotspot object-gauze is-locked" type="button" data-object="1" aria-label="Unlock the gauze memory" disabled>
+            <span class="object-label">Gauze</span>
+          </button>
+          <button class="object-hotspot object-money is-locked" type="button" data-object="2" aria-label="Unlock the folded money memory" disabled>
+            <span class="object-label">Money</span>
+          </button>
+          <button class="object-hotspot object-phone is-locked" type="button" data-object="3" aria-label="Unlock the phone memory" disabled>
+            <span class="object-label">Phone</span>
+          </button>
+        </div>
+      </section>
+
+      <section id="story-screen" class="screen story-screen is-hidden">
+        <div id="scene-image" class="scene-image" role="img" aria-label=""></div>
+        <div class="scene-shade" aria-hidden="true"></div>
+        <div class="scene-content">
+          <h2 id="scene-title"></h2>
+          <div id="scene-copy" class="scene-copy"></div>
+          <p id="choice-label" class="choice-label is-hidden">Me:</p>
+          <div id="choice-area" class="choice-area"></div>
+          <p id="scene-status" class="scene-status" role="status"></p>
+          <button id="continue-button" class="story-button is-hidden" type="button">
+            Continue
+          </button>
+        </div>
+      </section>
+
+      <section id="ending-screen" class="screen ending-screen is-hidden">
+        <p class="ending-text">
+          Some forms of love feel too ordinary in the moment; only when time no longer permits an answer can we see their weight.
+          Growth brings realisation, but not the opportunity to make amends.
+        </p>
+      </section>
+
+      <div id="transition-overlay" class="transition-overlay" aria-hidden="true"></div>
+    </main>
+    <script src="script.js?v=20261022-13"></script>
+  </body>
+</html>

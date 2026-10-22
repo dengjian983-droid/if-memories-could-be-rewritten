@@ -96,7 +96,7 @@ button {
 
 .interface-image {
   z-index: -2;
-  background: var(--indigo-950) url("memory-interface-objects.png") center / contain no-repeat;
+  background: var(--indigo-950) url("assets/memory-interface-objects.png") center / contain no-repeat;
 }
 
 .interface-shade {

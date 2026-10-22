@@ -29,10 +29,10 @@ jobs:
         with:
           enablement: true
 
-      - name: Upload static site
+      - name: Upload static files
         uses: actions/upload-pages-artifact@v4
         with:
-          path: .
+          path: ./dist
 
       - name: Deploy to GitHub Pages
         id: deployment
