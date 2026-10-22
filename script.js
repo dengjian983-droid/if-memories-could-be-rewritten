@@ -17,13 +17,13 @@ const openingStatus = document.querySelector('#opening-status');
 const memoryLight = document.querySelector('#memory-light');
 const transitionOverlay = document.querySelector('#transition-overlay');
 const audioTracks = {
-  childhoodKitchen: { audio: new Audio('assets/audio/scene-01-kitchen-web.wav'), loop: true, volume: 0.08 },
-  childhoodWater: { audio: new Audio('assets/audio/scene-01-water-bubbles-web.wav'), loop: true, volume: 0.035 },
-  middlePhoneRing: { audio: new Audio('assets/audio/scene-02-phone-ring-web.wav'), loop: false, volume: 0.14 },
-  highSchoolMoney: { audio: new Audio('assets/audio/scene-03-money-bill-web.wav'), loop: false, volume: 0.13 },
-  universityAir: { audio: new Audio('assets/audio/scene-04-air-conditioner-web.wav'), loop: true, volume: 0.055 },
-  universityVibrate: { audio: new Audio('assets/audio/scene-04-phone-vibrate-web.wav'), loop: false, volume: 0.28 },
-  hospitalAmbience: { audio: new Audio('assets/audio/hospital-air-conditioner-level-three-web.wav'), loop: true, volume: 0.28 }
+  childhoodKitchen: { audio: new Audio('scene-01-kitchen-web.wav'), loop: true, volume: 0.08 },
+  childhoodWater: { audio: new Audio('scene-01-water-bubbles-web.wav'), loop: true, volume: 0.035 },
+  middlePhoneRing: { audio: new Audio('scene-02-phone-ring-web.wav'), loop: false, volume: 0.14 },
+  highSchoolMoney: { audio: new Audio('scene-03-money-bill-web.wav'), loop: false, volume: 0.13 },
+  universityAir: { audio: new Audio('scene-04-air-conditioner-web.wav'), loop: true, volume: 0.055 },
+  universityVibrate: { audio: new Audio('scene-04-phone-vibrate-web.wav'), loop: false, volume: 0.28 },
+  hospitalAmbience: { audio: new Audio('hospital-air-conditioner-level-three-web.wav'), loop: true, volume: 0.28 }
 };
 
 const audioTracksByScene = {
@@ -43,7 +43,7 @@ Object.values(audioTracks).forEach((track) => {
 const scenes = [
   {
     title: 'Childhood',
-    image: 'assets/scene-01-childhood-bedroom.png',
+    image: 'scene-01-childhood-bedroom.png',
     paragraphs: [
       '6:03 a.m. The kettle is already boiling.',
       'Grandma asks whether I want noodles.'
@@ -55,7 +55,7 @@ const scenes = [
   },
   {
     title: 'Middle school',
-    image: 'assets/scene-02-burn-injury.png',
+    image: 'scene-02-burn-injury.png',
     paragraphs: [
       'My leg is red and swollen. Dad answers the phone.',
       'Grandma asks how he could be so careless.'
@@ -67,7 +67,7 @@ const scenes = [
   },
   {
     title: 'High school',
-    image: 'assets/scene-03-grandmothers-sofa.png',
+    image: 'scene-03-grandmothers-sofa.png',
     paragraphs: [
       'A folded note is pressed into my palm.',
       'Grandma says, “Keep it.”'
@@ -79,7 +79,7 @@ const scenes = [
   },
   {
     title: 'University',
-    image: 'assets/scene-04-university-dorm.png',
+    image: 'scene-04-university-dorm.png',
     paragraphs: [
       'Mum is calling. She tells me that Grandma says I should try dating.',
       'She wants to see me graduate. She hopes she can still be there on my wedding day.'
@@ -93,7 +93,7 @@ const scenes = [
   },
   {
     title: 'Hospital present',
-    image: 'assets/scene-05-hospital-present.png',
+    image: 'scene-05-hospital-present.png',
     intro: [
       'Grandma is lying in a hospital bed.',
       'She cannot hear me clearly. She cannot remember who I am. She cannot say more than a small sound.'
